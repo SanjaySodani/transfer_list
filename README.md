@@ -1,17 +1,9 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+A simple transfer list enables the user to move one or more list items to and fro.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+## Features
 
-A transfer list enables the user to move one or more list items to and fro.
+![Transfer List demo](https://github.com/SanjaySodani/media/blob/main/transfer_list.gif "Demo")
 
 ## Getting started
 
@@ -23,7 +15,7 @@ A transfer list enables the user to move one or more list items to and fro.
 ```dart
 TransferList(
   leftList: const ['Dog', 'Cat', 'Mouse', 'Rabbit'],
-  rightList: const [],
+  rightList: const ['Lion', 'Tiger', 'Fox' , 'Wolf'],
   onChange: (leftList, rightList) {
     // your logic
   },
@@ -31,3 +23,17 @@ TransferList(
   textStyle: const TextStyle(color: Colors.black),
 ),
 ```
+
+## Parameters
+
+| Parameter Name | Description |
+| -------------- | ----------- |
+| leftList | Initial items on left list |
+| rightList | Initial items on right list |
+| onChange | callback, passes new left and right list |
+| checkboxFillColor | checkbox fill color |
+| tileSplashColor | splash color on the list tile |
+| listBackgroundColor | background color of the list containers |
+| textStyle | text style of text on list tile |
+| height | widget height |
+| width | widget width |

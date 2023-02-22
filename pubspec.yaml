@@ -1,6 +1,6 @@
 name: transfer_list
 description: A transfer list enables the user to move one or more list items to and fro.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/SanjaySodani/transfer_list
 
 environment:
